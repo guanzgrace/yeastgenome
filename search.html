@@ -1,0 +1,30 @@
+<ons-page class="center" ng-controller="SearchController">
+
+	<ons-scroller>
+
+		<ons-navigator-toolbar title="Search"></ons-navigator-toolbar>
+	    
+		<ons-list>    
+		   
+		    <ons-list-item>
+				<ons-search-input id="searchbox" ng-model="searchText" placeholder="search 3 or more characters..."></ons-search-input>
+    		</ons-list-item>
+        	
+        	<ons-list-item ng-if="searchText.length > 2" ng-repeat="item in items | filter:filterText(searchText) | limitTo:100" ng-click="showDetail(item)">
+            	{{item.1}}
+        	</ons-list-item>
+        	<ons-list-item ng-if="searchText.length > 2" ng-repeat="item in items | filter:{2:searchText} | limitTo:100" ng-click="showDetail(item)">
+            	{{item.1}}
+        	</ons-list-item>
+        	<ons-list-item ng-if="searchText.length > 2" ng-repeat="item in items | filter:{22:searchText} | limitTo:100" ng-click="showDetail(item)">
+            	{{item.1}}
+        	</ons-list-item>
+        	<ons-list-item ng-if="searchText.length > 2" ng-repeat="item in items | filter:{19:searchText} | limitTo:100" ng-click="showDetail(item)">
+            	{{item.1}}
+        	</ons-list-item>
+    	
+    	</ons-list>          
+
+	</ons-scroller>
+
+</ons-page>

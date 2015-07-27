@@ -1,0 +1,15 @@
+<ons-page class="center" ng-controller="FavesController">
+	
+	<ons-scroller>
+	
+		<ons-navigator-toolbar title="Favorites"></ons-navigator-toolbar>
+
+		<ons-list>        
+        	<ons-list-item ng-repeat="item in items | limitTo:1500" ng-click="showDetail(item)">
+            	{{item.1}}
+        	</ons-list-item>
+    	</ons-list>
+
+	</ons-scroller>
+
+</ons-page>

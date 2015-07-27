@@ -1,0 +1,121 @@
+<ons-page class="center" ng-controller="GeneController">
+    
+    <ons-scroller>
+	
+		<ons-navigator-toolbar title="Viewing Feature">
+		</ons-navigator-toolbar>
+
+		<ons-list>
+			<ons-list-item>
+				<ons-row>
+					<ons-col>
+						<span id="featurename">
+							<strong>{{item.1}}</strong>
+						</span>
+					</ons-col>
+					<ons-col size="10">
+						<span id="favoritebutton"><img class="center" ng-src="{{imgURL(item)}}" ng-click="changeFavorite(item)"></span>
+					</ons-col>
+				</ons-row>
+			</ons-list-item>
+			<ons-list-item>
+				
+					<ons-row align="top">
+						<span id="geneheader">description</span><span id="genetext">{{item.19}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">gene name</span><span id="genetext">{{item.2}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">chromosome</span>
+						<span id="genetext">{{item.3}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">feature type</span>
+						<span id="genetext">{{item.4}}</span>
+					</ons-row>
+					<!--<ons-row id="spaceabove">
+						<span id="geneheader">source</span>
+						<span id="genetext">{{item.5}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">taxonid</span>
+						<span id="genetext">{{item.6}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">dbxrefid</span>
+						<span id="genetext">{{item.7}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">status</span>
+						<span id="genetext">{{item.8}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">feature date created</span>
+						<span id="genetext">{{item.9}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">coord version</span>
+						<span id="genetext">{{item.10}}</span>
+					</ons-row>-->
+					<ons-row id="spaceabove">
+						<span id="geneheader">min coordinate</span>
+						<span id="genetext">{{item.11}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">max coordinate</span>
+						<span id="genetext">{{item.12}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">strand</span>
+						<span id="genetext">{{item.13}}</span>
+					</ons-row>
+					<!--<ons-row id="spaceabove">
+						<span id="geneheader">is current?</span>
+						<span id="genetext">{{item.14}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">feature location date created</span>
+						<span id="genetext">{{item.15}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">feature attribute</span>
+						<span id="genetext">{{item.16}}</span>
+					</ons-row>-->
+					<ons-row id="spaceabove">
+						<span id="geneheader">qualifier</span>
+						<span id="genetext">{{item.17}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">name description</span>
+						<span id="genetext">{{item.18}}</span>
+					</ons-row>
+					<!--<ons-row id="spaceabove">
+						<span id="geneheader">genetic position</span>
+						<span id="genetext">{{item.20}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">feature annotation date created</span>
+						<span id="genetext">{{item.21}}</span>
+					</ons-row>-->
+					<ons-row id="spaceabove">
+						<span id="geneheader">alias name</span>
+						<span id="genetext">{{item.22}}</span>
+					</ons-row>
+					<!--<ons-row id="spaceabove">
+						<span id="geneheader">alias type</span>
+						<span id="genetext">{{item.23}}</span>
+					</ons-row>
+					<ons-row id="spaceabove">
+						<span id="geneheader">alias date created</span>
+						<span id="genetext">{{item.24}}</span>
+					</ons-row>
+				
+			</ons-list-item>
+			<ons-list-item>more information (insert link here later)--></ons-list-item>
+	
+		</ons-list>
+	
+	</ons-scroller>
+	
+</ons-page>
